@@ -3,6 +3,9 @@ import Link from "next/link"
 export default function NavBar() { 
     return (
         <header>
+            <div>
+                <Link href="/">Alex Moxley</Link>
+            </div>
             <ul>
                 <li>
                     <Link href="/about">About</Link>
