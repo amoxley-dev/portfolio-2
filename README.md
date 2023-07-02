@@ -7,8 +7,10 @@ Thank you for taking the time to visit the repo of my portfolio! Here you'll fin
 <img width="619" alt="HomeView" src="https://github.com/amoxley-dev/portfolio-2/assets/71603030/0b1f6738-c48e-45aa-b70a-4b7e15171a78">
 
 ### Projects Page View
+<img width="619" alt="ProjectsView" src="https://github.com/amoxley-dev/portfolio-2/assets/71603030/e03ba822-e03d-4310-aae9-c8cc23d333bc">
 
 ### Resume Page View
+
 
 ## technologies
 - Next.js
