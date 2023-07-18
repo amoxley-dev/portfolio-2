@@ -13,9 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen bg-gradient-to-t from-purple-700 via-fuchsia-900 to-slate-900" >
+      <body className="h-screen bg-gradient-to-t from-purple-700 via-fuchsia-900 to-slate-900 flex flex-col" >
         <NavBar />
-        <main>
+        <main className='h-full'>
           {children}
         </main>
       </body>
