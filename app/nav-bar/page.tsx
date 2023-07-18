@@ -9,7 +9,7 @@ export default function NavBar() {
 
     
     return (
-        <header className="h-20 flex items-center justify-between">
+        <header className="h-20 w-full flex items-center justify-between">
             <h1 className="mx-6">
                 <Link href="/" className="text-slate-100">Alex Moxley</Link>
             </h1>
