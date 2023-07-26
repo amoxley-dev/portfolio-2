@@ -1,5 +1,4 @@
-import Link from "next/link"
-import { useEffect } from "react";
+import Link from "next/link";
 
 export default function NavBar() { 
     const navLinks: string[][] = [
