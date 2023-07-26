@@ -2,7 +2,7 @@ import './globals.css'
 import NavBar from './nav-bar/page'
 
 export const metadata = {
-  title: 'Alex Moxley Portfolio',
+  title: 'Alex Moxley - Software Engineer',
   description: 'Portfolio of Alex Moxley, a software engineer based in Sunnyvale, CA.',
 }
 
