@@ -10,10 +10,10 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <nav className='hidden sm:block space-x-8 text-xl ' aria-label='main'>
-        <Link href='/' className={`${defaultNavLink} ${pathname === '/' ? activeNavLink : ''}`}>Home</Link>
-        <Link href='/projects' className={`${defaultNavLink} ${pathname === '/projects' ? activeNavLink : ''}`}>Projects</Link>
-        <Link href='/resume'className={`${defaultNavLink} ${pathname === '/resume' ? activeNavLink : ''}`}>Resume</Link>
+      <nav className='hidden sm:block space-x-8 text-xl z-20' aria-label='main'>
+        <Link href='/' className={pathname === '/' ? activeNavLink : defaultNavLink}>Home</Link>
+        <Link href='/projects' className={pathname === '/projects' ? activeNavLink : defaultNavLink}>Projects</Link>
+        <Link href='/resume'className={pathname === '/resume' ? activeNavLink : defaultNavLink}>Resume</Link>
       </nav>
     </>
   )
