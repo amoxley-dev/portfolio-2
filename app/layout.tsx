@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='sm:scroll-smooth'>
-      <body className='min-h-screen bg-slate-50 dark:bg-black dark:text-white'>
+      <body className='min-h-screen bg-slate-50'>
         <Header />
         {children}
       </body>
