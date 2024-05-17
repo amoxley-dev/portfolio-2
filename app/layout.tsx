@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import Header from "./components/Header";
-import "./globals.css";
+import type { Metadata } from 'next';
+import Header from './components/Header';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Alex Moxley",
-  description: "Alex Moxley Portfolio",
+  title: 'Alex Moxley',
+  description: 'Alex Moxley Portfolio',
 };
 
 export default function RootLayout({
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang='en' className='sm:scroll-smooth'>
+      <body className='min-h-screen bg-slate-50 dark:bg-black dark:text-white'>
         <Header />
         {children}
       </body>
