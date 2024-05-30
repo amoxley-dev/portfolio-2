@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -28,6 +29,8 @@ const config: Config = {
         '900': '#185261',
         '950': '#0a3642',
       },
+      black: colors.black,
+      white: colors.white
     }
   },
   plugins: [],
