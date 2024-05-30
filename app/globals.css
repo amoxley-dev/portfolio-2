@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --clr-border: rgb(208 252 253);
+  --clr-border-hover: rgb(208 252 253 / 85%);
+  --active-clr-border: rgb(237 254 253 / 85%);
+}
+
+@media (min-width: 640px) {
+  .link-underline {
+    opacity: 100%;
+    border-bottom-width: 0;
+    background-image: 
+      repeating-linear-gradient(transparent, transparent),
+      repeating-linear-gradient(270deg, var(--clr-border-hover), var(--clr-border-hover) 3px, transparent 3px, transparent 6px);
+    background-size: 0 3px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: all .25s ease-in-out;
+  }
+  
+  .link-underline:hover {
+    opacity: 85%;
+    background-size: 92% 3px;
+  }
+}
+
+.active-link-underline {
+  border-bottom-width: 0;
+  background-image:
+    repeating-linear-gradient(270deg, var(--active-clr-border), var(--active-clr-border) 3px, transparent 3px, transparent 6px);
+  background-size: 92% 3px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
