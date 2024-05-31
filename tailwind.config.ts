@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors from 'tailwindcss/colors';
+import colors, { slate } from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -30,7 +30,8 @@ const config: Config = {
         '950': '#0a3642',
       },
       black: colors.black,
-      white: colors.white
+      white: colors.white,
+      slate: colors.slate
     }
   },
   plugins: [],
