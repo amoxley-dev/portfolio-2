@@ -13,9 +13,7 @@ const Header: React.FC = () => {
           <Hamburger />
           <NavBar />
         </section>
-        <section id='mobile-menu' className='absolute bg-black top-0 w-full text-5xl flex flex-col justify-center'>
-          <MobileNavBar />
-        </section>
+        <MobileNavBar />
       </ header>
     </>
   )
