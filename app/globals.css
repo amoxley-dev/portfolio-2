@@ -8,6 +8,17 @@
   --active-clr-border: rgb(237 254 253 / 85%);
 }
 
+.mobile-link-underline {
+  opacity: 100%;
+  border-bottom-width: 0;
+  background-image: 
+    repeating-linear-gradient(transparent, transparent),
+    repeating-linear-gradient(270deg, var(--clr-border-hover), var(--clr-border-hover) 3px, transparent 3px, transparent 6px);
+  background-size: 92% 3px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 640px) {
   .link-underline {
     opacity: 100%;
