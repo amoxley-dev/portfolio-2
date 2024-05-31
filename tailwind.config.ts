@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors, { slate } from 'tailwindcss/colors';
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -14,6 +14,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        'open-menu': {
+          '0%': { transform: 'scaleY(0)'},
+          '80%': { transform: 'scaleY(1.2)'},
+          '100%': { transform: 'scaleY(1)'},
+        }
+      },
+      animation: {
+        'open-menu': 'open-menu 0.5s ease-in-out forwards',
+      }
     },
     colors: {
       'turquoise-blue': {
