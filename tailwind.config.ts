@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors from 'tailwindcss/colors';
+import colors, { transparent } from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -41,7 +41,8 @@ const config: Config = {
       },
       black: colors.black,
       white: colors.white,
-      slate: colors.slate
+      slate: colors.slate,
+      transparent: colors.transparent
     }
   },
   plugins: [],
