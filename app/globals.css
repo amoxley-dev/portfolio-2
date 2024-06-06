@@ -2,10 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 68px);
+  }
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+  }
+}
+
 :root {
   --clr-border: rgb(208 252 253);
   --clr-border-hover: rgb(208 252 253 / 85%);
   --active-clr-border: rgb(237 254 253 / 85%);
+}
+
+.mobile-link-underline {
+  opacity: 100%;
+  border-bottom-width: 0;
+  background-image: 
+    repeating-linear-gradient(transparent, transparent),
+    repeating-linear-gradient(270deg, var(--clr-border-hover), var(--clr-border-hover) 3px, transparent 3px, transparent 6px);
+  background-size: 92% 3px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 640px) {
