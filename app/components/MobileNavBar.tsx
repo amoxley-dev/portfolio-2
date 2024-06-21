@@ -12,14 +12,9 @@ const MobileNavBar = () => {
     <>
       <section 
         id='mobile-menu' 
-        className='absolute bg-black top-68 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden'
+        className='absolute bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden'
         onClick={() => toggleMenu()}
       >
-        {/* <button 
-          className='text-8xl self-end px-6'
-        >
-          &times;
-        </button> */}
         <nav className='flex flex-col min-h-screen items-center py-8'>
           <Link href='/' className={pathname === '/' ? activeNavLink : ''}>Home</Link>
           <Link href='/projects' className={pathname === '/projects' ? activeNavLink : ''}>Projects</Link>
