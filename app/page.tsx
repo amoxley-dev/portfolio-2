@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex justify-center">
       <section className="flex flex-col justify-center text-2xl my-3">
         <div>
           Welcome to my portfolio! I am a software engineer with full stack experience building scalable, accessible, and dynamic websites.
